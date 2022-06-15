@@ -1,0 +1,5 @@
+Components:
+    Board:
+        tiles: [[Tile]]
+    Tile:
+        letter: String
