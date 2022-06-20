@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-const bgc = "#800000";
-const Fancy = () => {
-  return <div></div>;
-};
+const Fancy = styled.h1`
+  font-family: "Asap", serif;
+  color: goldenrod;
+  text-align: center;
+`;
 
 export default Fancy;

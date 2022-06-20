@@ -1,0 +1,15 @@
+Scrabble should allow primary user input.
+
+Scrabble should play the computer against primary user.
+
+Scrabble should generate 7 random tiles AND remove them from the grabBag.
+
+Scrabble should validate active word against api of english. If undefined then throws invalid input error. Ideas: merriam-webster.com, thefreedictionary.com
+
+Scrabble should have a concurrent scoreboard. Scrabble should print this number below the board itself.
+
+Scores should be separate fields for each player. The scores should be on one side of the board.
+
+There should either be a Scrabble label above or below the gameboard itself. It should fit the maroon-khaki theme.
+
+An end game screen should recap the best word play of the game, who won and the runner up if more than one player counterpart.

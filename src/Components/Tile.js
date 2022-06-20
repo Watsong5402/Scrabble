@@ -11,10 +11,11 @@ const Tile = styled.td`
   font-size: 32px;
   color: black;
   text-align: center;
+  font-family: "Asap", serif;
 
   ${props => props.modifier === "DW" && css`
     background: palevioletred;
-    color: black;
+    color: black; 
   `}
 
   ${props => props.modifier === "TW" && css`

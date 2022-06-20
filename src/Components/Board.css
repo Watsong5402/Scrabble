@@ -3,10 +3,11 @@ th,
 td {
   border: 1px solid black;
   background-color: #caa472;
-  size: 80%;
 }
 
-table {
+table, tbody {
   width: 800px;
   height: 50%;
+  margin-bottom:0px;
+  padding-bottom: 0px;
 }

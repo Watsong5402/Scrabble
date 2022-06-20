@@ -1,6 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Board from "./Components/Board";
 import Fancy from "./Components/Fancy";
+import ScorePanels from "./Components/Score/ScorePanels";
 import "./App.css";
 
 const boardData = [
@@ -24,9 +25,9 @@ const boardData = [
 const boardValues = [
   ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
   ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-  ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
-  ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+  ["", "", "", "", "", "", "", "S", "", "", "", "", "", "", ""],
   ["", "", "", "", "", "", "", "C", "", "", "", "", "", "", ""],
+  ["", "", "", "", "", "", "", "A", "", "", "", "", "", "", ""],
   ["", "", "", "", "", "R", "A", "R", "E", "R", "", "", "", "", ""],
   ["", "", "", "", "", "", "", "A", "", "", "", "", "", "", ""],
   ["", "", "", "", "", "", "", "B", "U", "X", "O", "M", "", "", ""],
@@ -41,11 +42,18 @@ const boardValues = [
 
 function App() {
   return (
-    <React.Fragment className="App">
-      <Board boardData={boardData} boardValues={boardValues}></Board>
-      <Fancy>SCRABBLE</Fancy>
-      <footer>Scrabble for Scrabble's sake.</footer>
-    </React.Fragment>
+    <div className="App">
+      <ScorePanels
+        playerOneName="PLAYER_ONE"
+        playerTwoName="PLAYER_TWO"
+      ></ScorePanels>
+      <div>
+        <Board boardData={boardData} boardValues={boardValues}></Board>
+        <div className="label">
+          <Fancy>SCRABBLE</Fancy>
+        </div>
+      </div>
+    </div>
   );
 }
 
